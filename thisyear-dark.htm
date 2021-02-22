@@ -1,0 +1,47 @@
+<script src="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.css" />
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/js-year-calendar@latest/dist/js-year-calendar.min.css" />
+<style>
+ .calendar {
+ 	background-color: #2f3437;
+ 	}
+ 
+	body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+	}
+	
+.calendar .calendar-header .year-title {
+  font-size: 28px;
+  color: #999;
+	}
+	
+.calendar table.month th.month-title {
+  color: #777;
+  font-size: 20px;
+  font-weight: 600;
+}	
+
+.calendar table.month td.day .day-content {
+  color: #afb1b2;
+  border-radius: 2px;
+	}
+
+
+.calendar table.month th.day-header {
+  color: #ddd;
+  font-weight: 500;
+}
+.calendar .calendar-header table th.next, .calendar .calendar-header table th.prev{
+					color: #999;
+					width: 20px;
+				}
+</style>
+
+<div id="calendar"></div>
+
+<script>
+	new Calendar('#calendar')
+</script>
+
+
