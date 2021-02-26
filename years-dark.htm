@@ -11,14 +11,15 @@
   background-color: #2f3437;
 
 	}
-
-.calendar .calendar-header{
-	display: none;
-	}	
+	
+.calendar .calendar-header .year-title {
+  font-size: 28px;
+  color: #999;
+	}
 	
 .calendar table.month th.month-title {
   color: #777;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
 }	
 
@@ -30,7 +31,6 @@
 
 .calendar table.month th.day-header {
   color: #ddd;
-  font-size: 9px;
   font-weight: 500;
 }
 .calendar .calendar-header table th.next, .calendar .calendar-header table th.prev{
@@ -43,12 +43,6 @@
 
 <script>
 	new Calendar('#calendar')
-
-	var date = new Date();
-	var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
-	var lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
-	calendar.MinDate(firstDay, true);
-	calendar.MaxDate(lastDay, false);
 </script>
 
 
